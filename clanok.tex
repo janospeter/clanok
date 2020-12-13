@@ -3,6 +3,7 @@
 \documentclass[10pt,oneside,slovak,a4paper]{article}
 
 \usepackage[slovak]{babel}
+\usepackage{float}
 %\usepackage[T1]{fontenc}
 \usepackage[IL2]{fontenc} % lepšia sadzba písmena Ľ než v T1
 \usepackage[utf8]{inputenc}
@@ -74,12 +75,20 @@ Vzhľadom na relatívne krátke časové obdobie, počas ktorého sa gamifikáci
 \subsection{Prvky gamifikácie}
 \label{elements}
 Ako sme si už pri definícii gamifikácie spomenuli \ref{gamifikacia}, gamifikácia motivuje študenta tým, že využíva herné prvky v nehernom kontexte. Medzi tieto prvky patria napríklad:
-\begin{itemize}
-    \item Body - Používateľ získava za svoj pokrok body, ktoré môže neskôr využiť na získanie benefitov.
-    \item Odznaky - Používateľ získava za dosiahnuté úspechy odznaky, ktoré ho motivujú pracovať na sebe stále viac a viac, aby mohol získať ďalšie odznaky.
-    \item Výsledková tabuľka - Pocit pokroku motivuje používateľa k tomu, aby na sebe ďalej pracoval. Výsledkové tabuľky môžu slúžiť ako prvok spoločenského postavenia.
-    \item Certifikáty - Získanie certifikátu z kurzu signalizuje dosiahnuté výsledky. 
-\end{itemize}
+\begin{table}[H]
+\begin{tabular}{|l|l|}
+\hline
+Body                & Číselná akumulácia na základe určitých činností. \\ \hline
+Odznaky             & Vizuálne zobrazenie úspechov                     \\ \hline
+Výsledkové tabuľky  & Hodnotenie používateľov podľa úspešnosti         \\ \hline
+Ukazovatele postupu & Ukazuje hráčovi jeho pokrok                      \\ \hline
+Výkonnostné grafy   & Ukazuje hráčovi jeho výkon                       \\ \hline
+Úlohy               & Úlohy, ktoré musí používateľ splniť              \\ \hline
+Levely              & Hra je rozdelená na úrovne                       \\ \hline
+Avatari             & Vizuálna reprezentácia hráča                     \\ \hline
+\end{tabular} \caption{Prvky gamifikácie}
+\end{table}
+
 
 \subsection{Štúdie o gamifikácií} \label{studies}
 Ak sa na štúdie o gamifikácií pozrieme podrobnejšie, zistíme konkrétnejšie informácie o tom, ako môžu rôzne spôsoby jej použitia ovplyvniť učenie sa. Pri správnom použití gamifikácie môžu inštruktory ovplyvniť správanie študentov, čo by malo zjendodušiť proces učenia sa a to aj v súčastnosti aj v budúcnosti.~\cite{garland2015gamification}
@@ -104,23 +113,21 @@ Využitie gamifikácie vo výučbe cudzích jazykov prinieslo mnoho užitočnýc
 \begin{itemize}
 \item Duolingo
 
-Duolingo je gamifikovaná platforma na výučbu cudzích jazykov a prekladanie, kde používatelia postupujú cez rôzne levely rôznych obtiažností. Pokrýva oblasti rozprávania, počúvania, gramatiky aj slovníku, ktorý je potrebný na naučenie cudzieho jazyka. Používateľ si môže vybrať z ôsmych kurzov pre anglicky hovoriacich študentov a kurzy anglického jazyka v pätnástich jazykoch. Spätná väzba aplikácie je okamžitá a používateľ si vie veľmi jendoducho sledovať svoj progres.
+Duolingo je gamifikovaná platforma na výučbu cudzích jazykov a prekladanie, kde používatelia postupujú cez rôzne levely rôznych obtiažností. Pokrýva oblasti rozprávania, počúvania, gramatiky aj slovníku, ktorý je potrebný na naučenie cudzieho jazyka. Používateľ si môže vybrať z ôsmych kurzov pre anglicky hovoriacich študentov a kurzy anglického jazyka v pätnástich jazykoch. Spätná väzba aplikácie je okamžitá a používateľ si vie veľmi jendoducho sledovať svoj progres. ~\cite{flores2015using}
 
 \item Class Dojo
 
-Hlavným účelom aplikácie Class Dojo je poskytnúť inštruktorovi platformu na sledovanie správania študentov. Taktiež pomáha študentom na základných školách vo výučbe cudzích jazykov pomocou stratégií, ktoré kombinujú avatarov, body, odznaky, výsledkové tabuľky. Taktiež umožňuje sledovať pokrok študentov aj rodičom. 
+Hlavným účelom aplikácie Class Dojo je poskytnúť inštruktorovi platformu na sledovanie správania študentov. Taktiež pomáha študentom na základných školách vo výučbe cudzích jazykov pomocou stratégií, ktoré kombinujú avatarov, body, odznaky, výsledkové tabuľky. Taktiež umožňuje sledovať pokrok študentov aj rodičom. ~\cite{flores2015using}
 
 \item Zondle
 
-Zondle je gamifikovaná platforma, pomocou ktorej môže učiteľ vytvárať kvízy, a ktorá mu ponúka veľmi veľa obsahu. Študenti sa do týchto kvízov a hier zapájajú. Zondle sleduje pokroky študentov a taktiež obsahuje ďalšie herné elementy ako avatarov, body a výsledkové tabuľky. Zondle prospieva študentom cudzích jazykov pomocou kvízov, ktoré sú v aplikácií zabudované. 
+Zondle je gamifikovaná platforma, pomocou ktorej môže učiteľ vytvárať kvízy, a ktorá mu ponúka veľmi veľa obsahu. Študenti sa do týchto kvízov a hier zapájajú. Zondle sleduje pokroky študentov a taktiež obsahuje ďalšie herné elementy ako avatarov, body a výsledkové tabuľky. Zondle prospieva študentom cudzích jazykov pomocou kvízov, ktoré sú v aplikácií zabudované. ~\cite{flores2015using}
 \end{itemize}
-    
 
 \label{tools}
-
-
-
 \section{Záver} \label{zaver}
+Na záver môžme povedať, že gamifikovaný štýl učenia má pri výučbe cudzích jazykov pozitývny vplyv na študentov. Je však potrebné gamifikáciu správne implementovať, pretože ako sme už v článku spomínali, rôzne spôsoby implementácie gamifikácie do výučby môžu mať rôzny vplyv. A to buď pozitívny alebo aj negatívny. Táto metóda učenia je stále veľmi nová a bude na ňu potrebné vykonať štúdie, ktoré pôjdu viac do hĺbky a budú skúmať jej dlhodobý efekt na motiváciu študentov. 
+
 \bibliography{literatura}
 \bibliographystyle{plain}
 \end{document}
